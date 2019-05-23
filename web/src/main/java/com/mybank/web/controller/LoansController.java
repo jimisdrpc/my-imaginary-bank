@@ -18,8 +18,13 @@ public class LoansController {
 	@Autowired
 	private LoansService loansService;
 
+	//produces = "application/stream+json")
+	//produces = MediaType.APPLICATION_STREAM_JSON_VALUE) 
+	//produces = MediaType.APPLICATION_JSON_VALUE)  
+	//produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+
 	@CrossOrigin
-	@RequestMapping(method = RequestMethod.GET, produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public Flux<Loans> findAll() {
 		Flux<Loans> loans = loansService.findAll();
