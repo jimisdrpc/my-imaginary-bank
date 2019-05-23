@@ -1,0 +1,27 @@
+import React, { useState, Fragment } from 'react'
+import LoanTable from './tables/LoanTable'
+
+
+const App = () => {
+  const loansData = [
+    { name: 'Tania'}
+  ]
+
+  const [loans, setLoans] = useState(loansData)
+
+  return (
+    <div className="container">
+      <h1>CRUD App with Hooks</h1>
+      <div className="flex-row">
+        <div className="flex-large">
+          <h2>Add loan</h2>
+        </div>
+        <div className="flex-large">
+          <h2>View loans</h2>
+          <LoanTable loans={loans} />
+        </div>
+      </div>
+    </div>
+  )
+}
+export default App
