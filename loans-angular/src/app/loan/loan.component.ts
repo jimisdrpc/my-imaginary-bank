@@ -14,7 +14,7 @@ export class LoanComponent {
   constructor(private loanService: LoanService) { }
 
   requestLoanStream(): void {
-      this.loans = this.loanService.getLoanStream();
+    this.loans = this.loanService.getLoanStream();
   }
 }
 
