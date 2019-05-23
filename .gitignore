@@ -9,7 +9,7 @@
 log/
 target/
 
-# Angular
+# Angular and React
 node_modules/
 
 # Servers
