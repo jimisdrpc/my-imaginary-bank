@@ -9,5 +9,8 @@
 log/
 target/
 
+# Angular
+node_modules/
+
 # Servers
 zookeeper-3.4.14/
