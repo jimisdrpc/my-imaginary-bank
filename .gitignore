@@ -1,0 +1,13 @@
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# Maven
+.mvn
+log/
+target/
+
+# Servers
+zookeeper-3.4.14/
